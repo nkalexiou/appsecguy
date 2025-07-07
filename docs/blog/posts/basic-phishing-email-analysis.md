@@ -3,10 +3,10 @@ layout: post
 title:  "Basic email security analysis"
 date:   2024-02-01
 categories:
-    - cybersecurity
+    - Cybersecurity
 description: "How to perform a basic security analysis of an email"
 tags:
-    - cybersecurity
+    - Cybersecurity
 ---
 
 I haven't written a blog post for some time now, so here we go: Security analysis of emails!

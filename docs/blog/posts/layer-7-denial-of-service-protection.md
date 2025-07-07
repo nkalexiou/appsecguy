@@ -3,12 +3,12 @@ layout: post
 title:  "Application L7 Denial-of-Service attacks"
 date:   2023-02-21
 categories:
-    - Cybersecuity
+    - Cybersecurity
     - Architecture
     - AppSec
 description: "How to improve your protection against DoS attacks on the application layer"
 tags:
-    - Cybersecuity
+    - Cybersecurity
     - Architecture
     - AppSec
 ---

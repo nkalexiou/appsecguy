@@ -7,7 +7,6 @@ categories:
 description: "Create automated Dynamic Application Security Test (DAST) reports with Rapid7 using python and post them on Slack"
 tags:
     - AppSec
-    - DAST
 ---
 
  This blog post describes how to collect information from a popular DAST platform, create a simple report and share it with development teams using a popular collaboration platform like Slack.
