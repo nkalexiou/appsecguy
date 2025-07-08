@@ -1,9 +1,9 @@
 # Welcome to my blog
 
-Nikos is a cybersecurity geek focusing on Application Security. He specializes on managing and establishing Secure Development Lifecycles, to ensure that security is embedded in all stages of software development.
+Nikos is a cybersecurity geek focusing on Application Security. He specializes on establishing and managing Secure Development Lifecycle programs, and embedding security in all stages of software development.
 
-He is experienced in multiple InfoSec projects, such as penetration testing assignments, threat modeling workshops, kick-starting and maturing Application Security programs, security awareness and developer security training, among others. He cherishes the opportunity of hands-on involvement in projects that allow him to combine experience and opportunity to learn. 
+He has experience in multiple InfoSec projects, including penetration testing assignments, vulnerability assessments, threat modeling workshops, secure development training programs and DevSecOps. 
 
-As part of the OWASP Stockholm leadership team he organized cybersecurity seminars and meetups to help the local community exchange knowledge and experience. His research contributions have been published in international peer-reviewed journals and conferences. He holds a Masters degree in Information Security from the Aristotle University of Thessaloniki and a number of cybersecurity certifications.
+Nikos has been involved with the cybersecurity community by presenting at security conferences and also, having been part of BSidesAthens review committee, and a leader of the OWASP Stockholm local chapter. He is a graduate of the Computer Science Department of the Aristotle University of Thessaloniki and has an MsC in Information Systems. 
 
-His :octicons-mark-github-24: home is [https://github.com/nkalexiou/](https://github.com/nkalexiou/). You can also find him on [Linkedin](https://www.linkedin.com/in/nkalexiou/).
+Github :octicons-mark-github-24: is his creativity canvas [https://github.com/nkalexiou/](https://github.com/nkalexiou/) and uncensored blog posts may appear on [AppSecGuy](https://appsecguy.se/). You can get in touch with him on [Linkedin](https://www.linkedin.com/in/nkalexiou/).
