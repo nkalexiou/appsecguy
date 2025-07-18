@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "Langgraph notes on state and memory"
+date:   2025-07-18
+categories:
+    - Langgraph
+description: "Langgraph notes on state and memory
+tags:
+    - Langgraph
+---
+
 Learning langgraph is cool, but clearing our the basic terminology is important. There are my notes on State and Memory, what they are, how to use them and when.
 
 ## State
