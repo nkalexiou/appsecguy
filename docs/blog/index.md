@@ -23,3 +23,4 @@ A blog on Application Security, Cybersecurity and more..
 -   [DevSecOps: Dynamic Security Analysis with nuclei](posts/devsecops-dast-nuclei.md)
 -   [Application L7 Denial-of-Service attacks](posts/layer-7-denial-of-service-protection.md)
 -   [Thoughts on AI and the future of AppSec](posts/ai-appsec.md)
+-   [Langgraph notes on state and memory](posts/langgraph-101.md)
