@@ -24,3 +24,4 @@ A blog on Application Security, Cybersecurity and more..
 -   [Application L7 Denial-of-Service attacks](posts/layer-7-denial-of-service-protection.md)
 -   [Thoughts on AI and the future of AppSec](posts/ai-appsec.md)
 -   [Langgraph notes on state and memory](posts/langgraph-101.md)
+-   [Heading to Black Hat and Defcon 2025 - Thoughts](posts/heading-to-blackhat-defcon.md)
