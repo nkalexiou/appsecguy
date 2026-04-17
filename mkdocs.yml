@@ -4,22 +4,38 @@ theme:
   name: material
   icon:
     logo: fontawesome/solid/a
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - toc.follow
+    - search.highlight
+    - search.suggest
   palette:
     # Dark Mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny
-        name: Dark mode
+        name: Switch to light mode
       primary: indigo
-      accent: lime
+      accent: cyan
 
     # Light Mode
     - scheme: default
       toggle:
         icon: material/weather-night
-        name: Light mode
-      primary: blue
-      accent: deep orange
+        name: Switch to dark mode
+      primary: indigo
+      accent: cyan
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md

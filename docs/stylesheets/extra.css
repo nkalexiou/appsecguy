@@ -1,0 +1,58 @@
+/* ── Typography & readability ─────────────────────────────────────── */
+.md-typeset {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Slightly wider content column on large screens */
+.md-grid {
+  max-width: 1140px;
+}
+
+/* Comfortable heading spacing */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Better paragraph spacing */
+.md-typeset p {
+  margin-bottom: 1em;
+}
+
+/* Code blocks — slightly more padding */
+.md-typeset pre > code {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* Inline code */
+.md-typeset code:not(.highlight code) {
+  font-size: 0.875em;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+}
+
+/* Blockquote — left-border accent style */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding: 0.6em 1.2em;
+  border-radius: 0 4px 4px 0;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* Blog post cards on listing page */
+.md-typeset .blog-post-title {
+  font-weight: 700;
+}
+
+/* Slightly larger post meta text */
+.md-typeset .md-post__meta {
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
