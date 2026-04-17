@@ -36,6 +36,13 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/extra.js
+
+copyright: >
+  &copy; Nikos Alexiou &mdash;
+  Views and opinions expressed on this blog are my own and do not represent those of my employer.
+
 nav:
   - Home: index.md
   - Blog:

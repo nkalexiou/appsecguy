@@ -21,3 +21,7 @@ I hold an M.Sc. and the CSSLP certification. I stay current because this field d
 [**:material-web: alexiou.dev**](https://www.alexiou.dev){ .md-button .md-button--primary }
 [**:material-linkedin: LinkedIn**](https://www.linkedin.com/in/nkalexiou/){ .md-button }
 [**:octicons-mark-github-24: GitHub**](https://github.com/nkalexiou/){ .md-button }
+
+---
+
+*Views and opinions expressed on this blog are my own and do not represent those of my employer.*
