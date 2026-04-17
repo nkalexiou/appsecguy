@@ -5,34 +5,33 @@ theme:
   icon:
     logo: fontawesome/solid/a
   font:
-    text: Inter
-    code: JetBrains Mono
+    text: DM Sans
+    code: DM Mono
   features:
     - content.code.copy
     - content.code.annotate
     - navigation.top
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
     - toc.follow
     - search.highlight
     - search.suggest
   palette:
-    # Dark Mode
+    # Dark Mode (default)
     - scheme: slate
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-      primary: indigo
-      accent: cyan
 
     # Light Mode
     - scheme: default
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-      primary: indigo
-      accent: cyan
 
 extra_css:
   - stylesheets/extra.css
@@ -42,9 +41,11 @@ nav:
   - Blog:
       - Blog Home: blog/index.md
       - Tags: blog/tags.md
+  - "Let's Talk ↗": https://www.alexiou.dev/#contact
 
 markdown_extensions:
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg

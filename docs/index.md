@@ -1,9 +1,23 @@
-# Welcome to my blog
+---
+hide:
+  - navigation
+  - toc
+---
 
-Nikos is a cybersecurity geek focusing on Application Security. He specializes on establishing and managing Secure Development Lifecycle programs, and embedding security in all stages of software development.
+# Security that works with engineering, not against it.
 
-He has experience in multiple InfoSec projects, including penetration testing assignments, vulnerability assessments, threat modeling workshops, secure development training programs and DevSecOps. 
+**Senior Product Security & Application Security Architect** — over a decade bridging the gap between security and software delivery.
 
-Nikos has been involved with the cybersecurity community by presenting at security conferences and also, having been part of BSidesAthens review committee, and a leader of the OWASP Stockholm local chapter. He is a graduate of the Computer Science Department of the Aristotle University of Thessaloniki and has an MsC in Information Systems. 
+---
 
-Github :octicons-mark-github-24: is his creativity canvas [https://github.com/nkalexiou/](https://github.com/nkalexiou/) and uncensored blog posts may appear on [AppSecGuy](https://appsecguy.se/). You can get in touch with him on [Linkedin](https://www.linkedin.com/in/nkalexiou/).
+I'm a Senior Product Security & Application Security Architect with over a decade of experience in Product Security, Application Security, and DevSecOps. My career started in software development — and that foundation shapes everything I do. I think in code, model threats from first principles, and design security controls that developers actually adopt.
+
+On the product security side, I operate at the intersection of engineering and the customer. That means translating complex compliance requirements into clear, prioritized roadmaps; working directly with enterprise customers on their security due diligence; and representing security credibly in conversations that span executive risk briefings and deep technical reviews.
+
+I hold an M.Sc. and the CSSLP certification. I stay current because this field demands it — and because I genuinely enjoy going deep on hard problems.
+
+---
+
+[**:material-web: alexiou.dev**](https://www.alexiou.dev){ .md-button .md-button--primary }
+[**:material-linkedin: LinkedIn**](https://www.linkedin.com/in/nkalexiou/){ .md-button }
+[**:octicons-mark-github-24: GitHub**](https://github.com/nkalexiou/){ .md-button }
