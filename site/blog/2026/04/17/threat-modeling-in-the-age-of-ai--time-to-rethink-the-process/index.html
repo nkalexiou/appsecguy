@@ -6,17 +6,15 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Detect open source vulnerabilities in Gradle projects with Github actions">
+        <meta name="description" content="Threat modeling has always been about context. AI is changing what that context can unlock — here's how I'm thinking about the combination.">
       
       
       
-        <link rel="canonical" href="https://appsecguy.se/blog/2022/09/11/detect-open-source-vulnerabilities-in-gradle-projects-with-github-actions/">
+        <link rel="canonical" href="https://appsecguy.se/blog/2026/04/17/threat-modeling-in-the-age-of-ai--time-to-rethink-the-process/">
       
       
-        <link rel="prev" href="../../../07/26/detect-hardcoded-secrets-using-github-actions/">
+        <link rel="prev" href="../../../../2025/08/16/black-hat-2025-and-defcon-33-debriefing/">
       
-      
-        <link rel="next" href="../../../10/02/automated-rapid7-reports-with-python/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -24,7 +22,7 @@
     
     
       
-        <title>Detect open source vulnerabilities in Gradle projects with Github actions - AppSecGuy Blog</title>
+        <title>Threat Modeling in the Age of AI — Time to Rethink the Process - AppSecGuy Blog</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#owasp-dependency-check" class="md-skip">
+        <a href="#context-matters" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Detect open source vulnerabilities in Gradle projects with Github actions
+              Threat Modeling in the Age of AI — Time to Rethink the Process
             
           </span>
         </div>
@@ -1078,36 +1076,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#owasp-dependency-check" class="md-nav__link">
+  <a href="#context-matters" class="md-nav__link">
     <span class="md-ellipsis">
-      OWASP Dependency Check
+      Context matters
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-about-dependabot" class="md-nav__link">
+  <a href="#ai-is-changing-the-game" class="md-nav__link">
     <span class="md-ellipsis">
-      What about dependabot?
+      AI is changing the game
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reusable-workflow" class="md-nav__link">
+  <a href="#where-is-this-going" class="md-nav__link">
     <span class="md-ellipsis">
-      Reusable workflow
+      Where is this going
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-the-analysis" class="md-nav__link">
+  <a href="#my-bottom-line" class="md-nav__link">
     <span class="md-ellipsis">
-      Running the analysis
+      My bottom line
     </span>
   </a>
   
@@ -1150,7 +1148,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2022-09-11 00:00:00+00:00" class="md-ellipsis">September 11, 2022</time>
+                        <time datetime="2026-04-17 00:00:00+00:00" class="md-ellipsis">April 17, 2026</time>
                       </div>
                     </li>
                     
@@ -1162,7 +1160,8 @@
                             in
                             
                               <a href="../../../../category/appsec/">AppSec</a>, 
-                              <a href="../../../../category/github/">Github</a></span>
+                              <a href="../../../../category/ai/">AI</a>, 
+                              <a href="../../../../category/threat-modeling/">Threat Modeling</a></span>
                         </div>
                       </li>
                     
@@ -1173,7 +1172,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              4 min read
+                              3 min read
                             
                           </span>
                         </div>
@@ -1200,105 +1199,58 @@
       
       
       
+        <a href="../../../../tags/#tag:ai" class="md-tag">AI</a>
+      
+    
+      
+      
+      
         <a href="../../../../tags/#tag:appsec" class="md-tag">AppSec</a>
       
     
       
       
       
-        <a href="../../../../tags/#tag:github" class="md-tag">Github</a>
+        <a href="../../../../tags/#tag:devsecops" class="md-tag">DevSecOps</a>
+      
+    
+      
+      
+      
+        <a href="../../../../tags/#tag:threat-modeling" class="md-tag">Threat Modeling</a>
       
     
   </nav>
 
 
 
-  <h1>Detect open source vulnerabilities in Gradle projects with Github actions</h1>
+  <h1>Threat Modeling in the Age of AI — Time to Rethink the Process</h1>
 
-<p>Software Composition Analysis (SCA) is the automated process of analyzing libraries and open source software with the aim of identifying publicly disclosed vulnerabilities, as well as license usage for compliance reasons.</p>
+<p>Threat modeling isn't one-size-fits-all. Never was, never will be. The threat landscape for a SaaS application is fundamentally different from a Windows desktop app running locally on a machine — and both of those are worlds apart from something like an MCP server. Context matters, a lot. The tech stack matters. The use case matters. If you're not anchoring your threat modeling to those specifics, you're probably producing something generic enough not easily consumable by the product teams.</p>
 <!-- more -->
 
-<p>Open source vulnerabilities are published in several online repositories and firstly the automated tool performing the SCA analysis clones this public information into its own knowledge database. Then it typically tries to match vulnerable versions of open source components used in the codebase being analysed. As an example, the tool can detect that log4j-core version 2.12.3 is being used and therefore generate a warning with information about the critical exploitable flaws. Of course, the analysis performed by SCA tools may be more detailed, especially if they are proprietary tools, but on a high level this is how the basic open source security analyzer works.</p>
-<h2 id="owasp-dependency-check">OWASP Dependency Check</h2>
-<p>OWASP provides a wonderful open source SCA analyzer called <a href="https://owasp.org/www-project-dependency-check/?ref=appsecguy.se">OWASP Dependency Check</a> that "attempts to detect publicly disclosed vulnerabilities contained within a project’s dependencies."</p>
-<p>In the simplest scenario, the command line flavor of the tool can be downloaded and used to check for open source vulnerabilities in a locally cloned repository. Simply download the tool and run: ./dependency-check.sh -project "name of your project" -scan "path to source code". To analyze Gradle projects you would have to follow the instructions here.</p>
-<p>However, the command line version does offer plenty of flexibility or ease of sharing the analysis results. A better approach would be to automate the analysis centrally from your source code management tool, which is more structured and also a natural place for code metrics and security analysis. If you are using Github then Github Actions is the way to go.</p>
-<h2 id="what-about-dependabot">What about dependabot?</h2>
-<p>Github provides dependabot for SCA analysis which is free and amazing. However it comes with limitations when analyzing Java applications built with Gradle. OWASP Dependency Check has no problem analyzing Gradle projects, but the analysis process needs to be automated with Github actions so that it's usable by the development teams.</p>
-<p>I do not suggest that OWASP Dependency Check is better or worse, but I do like the support for Gradle and also the fact that it is an amazing open source project from OWASP. So let's see how to run an SCA analysis for Gradle using OWASP Dependency Check with Github actions!</p>
-<h2 id="reusable-workflow">Reusable workflow</h2>
-<p>If you are not familiar with reusable workflows you should first read up here first. A reusable workflow is simply a set of actions that can be reused by other projects, simply by referencing the workflow. So in a work environment you could have a central repository where your reusable workflow reside and then you reference those from any other repository you wish to analyze.</p>
-<p>The reusable workflow looks like this:</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SCA reusable workflow for Gradle Projects</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">on</span><span class="p">:</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">workflow_call</span><span class="p">:</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nt">jobs</span><span class="p">:</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">build</span><span class="p">:</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v3</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">      </span><span class="c1"># Setup python</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Setup python</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v2</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.10.7</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">      </span><span class="c1"># Inject plugin code into build.gradle to enable the analysis</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Execute python script</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">            </span><span class="no">import re</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">            </span><span class="no">with open(&#39;build.gradle&#39;,&#39;r+&#39;) as build_file:</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">                </span><span class="no">lines_write = [&#39;\nbuildscript {\n&#39;,&#39;\n\trepositories {\n&#39;,&#39;\n\t\tmavenCentral()\n&#39;,&#39;\n\t}\n&#39;,&#39;\n\tdependencies {\n&#39;,&quot;\n\t\tclasspath &#39;org.owasp:dependency-check-gradle:7.1.2&#39;\n&quot;,&#39;\n\t}\n&#39;,&#39;\n}\n\n&#39;]</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">                </span><span class="no">contents = build_file.read()</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">                </span><span class="no">build_file.seek(0,0)</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">                </span><span class="no">build_file.writelines(lines_write)</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">                </span><span class="no">build_file.write(contents)</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">                </span><span class="no">build_file.write(&quot;\napply plugin: &#39;org.owasp.dependencycheck&#39;\n&quot;)</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">                </span><span class="no">build_file.close()</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">        </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">run the dependency check analysis</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./gradlew dependencyCheckAnalyze</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/upload-artifact@v3</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">          </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">security-analysis-gradle</span>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">build/reports/dependency-check-report.html</span>
-</span></code></pre></div>
-<p>In order to analyze Gradle we need to install the necessary plugin into build.gradle as explained <a href="https://jeremylong.github.io/DependencyCheck/dependency-check-gradle/index.html?ref=appsecguy.se">here</a>.</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">buildscript {</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">repositories {</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">            </span><span class="l l-Scalar l-Scalar-Plain">mavenCentral()</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">}</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">dependencies {</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">            </span><span class="l l-Scalar l-Scalar-Plain">classpath &#39;org.owasp:dependency-check-gradle:8.3.1&#39;</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">}</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">}</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">apply plugin</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&#39;org.owasp.dependencycheck&#39;</span>
-</span></code></pre></div>
-<p>To do that while running the analysis in Github Actions we use python to inject these lines of code at run time. This is done at the step with the name: "Execute python script".</p>
-<p>The analysis is then run using "./gradlew dependencyCheckAnalyze". This command generates a dependency check report under build/reports. To make it easier to find the report when the action is executed, an artifact is created as well. In this way, anyone with access to the repo can download the report at a later time under Actions in Github.</p>
-<h2 id="running-the-analysis">Running the analysis</h2>
-<p>Finally, to run the analysis you simply need to reference you workflow from a Github action. For example you can configure the analysis to run everyday at midnight like this:</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Open source security analysis for this Gradle Project using Owasp Dependency check</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">on</span><span class="p">:</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">schedule</span><span class="p">:</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">0 0 * * *</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="nt">jobs</span><span class="p">:</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="nt">gradle-open-source-security-analysis</span><span class="p">:</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">path/to-your-project-where-the-reusable-workflow-is/.github/workflows/name-of-workflow.yml@versiontag</span>
-</span></code></pre></div>
-<p>You can find your report in Actions as an artifact. </p>
+<h2 id="context-matters">Context matters</h2>
+<p>Over the years and across a lot of workshops, I always align with the <a href="https://www.threatmodelingmanifesto.org/">Threat Modeling Manifesto</a> principles. But — and this is the part that actually makes it work — I've always tried to align the process with the perspectives of the people in the room. The devs, the architects, the ops folks. Give them space to raise the risks themselves, voice what worries them, talk through what they're actually building.</p>
+<p>That human-driven approach does something important: it advances the team's own understanding of what they're building and what can go wrong. Threat modeling as a learning exercise, not just a compliance checkbox. Done right, the team walks out of that room seeing their own system differently.</p>
+<p>Threat modeling is, at its core, a team process. It's not something you hand off to a security person and get a report back. The value is in the conversation.</p>
+<p>Is it perfect? No. It's still only as good as the knowledge and experience in the room and just a step in the process of security releases and products. But it's better than nothing — and for a long time, that framing was enough.</p>
+<h2 id="ai-is-changing-the-game">AI is changing the game</h2>
+<p>What now then? That framing isn't quite enough anymore. AI is rapidly reshaping what threat modeling can look like, and honestly, what it should look like.</p>
+<p>Take the concept of threat models as code. Tools like <a href="https://github.com/OWASP/pytm">pytm</a> have been around for a while, letting you define your system architecture programmatically and generate threat models from it. Solid idea. But with LLMs that can actually understand context and reason about threat scenarios? That concept gets a completely different dimension. You're getting something that can interpret the design and surface context-aware threats.</p>
+<p>There are projects already moving in this direction. On the more experimental side:</p>
+<ul>
+<li><a href="https://github.com/OWASP/pytm">pytm</a></li>
+<li><a href="https://owasp.org/www-project-dragongpt/">DragonGPT</a> (OWASP Incubator)</li>
+<li><a href="https://github.com/mrwadams/stride-gpt">StrideGPT</a></li>
+</ul>
+<p>DragonGPT from the OWASP incubator is still finding its footing, but the idea is there. StrideGPT is a more mature example — it directly integrates LLMs into the STRIDE analysis process, and it's genuinely useful. These tools are pointing at where this is all heading: AI not as a replacement for the process, but as an accelerator and a value-multiplier.</p>
+<h2 id="where-is-this-going">Where is this going</h2>
+<p>The main path forward is deeper integration of AI capabilities in the threat modeling process — particularly in the post-workshop analysis phase.</p>
+<p>Here's what I mean. A workshop with a team is still valuable. You get the context, the edge cases, the "yeah but actually we do this weird thing in prod" moments that no LLM is going to surface on its own. But once you've got that raw material — the design, the data flows, the assumptions, the concerns raised in the room — that's where AI can accelerate the analysis. Feed it to an LLM with the right framing and you get threat coverage that would take a human analyst days to produce, across multiple attack categories and threat actor profiles.</p>
+<p>Speed matters. Coverage matters. And LLMs are genuinely good at both when they're given the right context to work with.</p>
+<p>The team conversation gives the AI something real to analyze. The AI gives the team something they couldn't have produced alone. That combination is where the value is. The one billion dollar question is: <em>"How do you fuse the two worlds together in a continuous manner?"</em></p>
+<h2 id="my-bottom-line">My bottom line</h2>
+<p>I still believe threat modeling is a team process. I still think the human conversation is irreplaceable for building shared understanding and surfacing the nuances that live inside people's heads. Integrate AI where it's meaningful. Keep the human conversation where it's irreplaceable.</p>
 
 
 

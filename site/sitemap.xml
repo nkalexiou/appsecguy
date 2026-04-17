@@ -97,7 +97,15 @@
          <lastmod>2026-04-17</lastmod>
     </url>
     <url>
+         <loc>https://appsecguy.se/blog/2026/04/17/threat-modeling-in-the-age-of-ai--time-to-rethink-the-process/</loc>
+         <lastmod>2026-04-17</lastmod>
+    </url>
+    <url>
          <loc>https://appsecguy.se/blog/2024/01/15/zenmap--nmap-parser/</loc>
+         <lastmod>2026-04-17</lastmod>
+    </url>
+    <url>
+         <loc>https://appsecguy.se/blog/archive/2026/</loc>
          <lastmod>2026-04-17</lastmod>
     </url>
     <url>
@@ -117,11 +125,7 @@
          <lastmod>2026-04-17</lastmod>
     </url>
     <url>
-         <loc>https://appsecguy.se/blog/category/cybersecurity/</loc>
-         <lastmod>2026-04-17</lastmod>
-    </url>
-    <url>
-         <loc>https://appsecguy.se/blog/category/langgraph-langchain/</loc>
+         <loc>https://appsecguy.se/blog/category/appsec/</loc>
          <lastmod>2026-04-17</lastmod>
     </url>
     <url>
@@ -129,7 +133,15 @@
          <lastmod>2026-04-17</lastmod>
     </url>
     <url>
-         <loc>https://appsecguy.se/blog/category/appsec/</loc>
+         <loc>https://appsecguy.se/blog/category/threat-modeling/</loc>
+         <lastmod>2026-04-17</lastmod>
+    </url>
+    <url>
+         <loc>https://appsecguy.se/blog/category/cybersecurity/</loc>
+         <lastmod>2026-04-17</lastmod>
+    </url>
+    <url>
+         <loc>https://appsecguy.se/blog/category/langgraph-langchain/</loc>
          <lastmod>2026-04-17</lastmod>
     </url>
     <url>
