@@ -112,7 +112,17 @@
 }
 
 .md-grid {
-  max-width: 1100px;
+  max-width: 1440px;
+}
+
+/* Widen blog post content by hiding the secondary (TOC) sidebar */
+.md-post .md-sidebar--secondary {
+  display: none;
+}
+
+.md-post .md-content {
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 /* ── Links ───────────────────────────────────────────────────────── */
