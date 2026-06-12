@@ -70,6 +70,7 @@ markdown_extensions:
   - pymdownx.details
 
 plugins:
-  - blog
+  - blog:
+      pagination_per_page: 5
   - tags
   - search
