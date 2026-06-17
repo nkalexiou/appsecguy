@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240" width="720" height="240" role="img" aria-label="Overview: words become embeddings, pass through transformer layers, and produce a next-word prediction.">
+  <style>text{font-family:Inter,system-ui,-apple-system,sans-serif}.m{font-family:'JetBrains Mono',ui-monospace,monospace}</style>
+  <defs>
+    <marker id="ar1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#8A8C9E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="720" height="240" fill="#FFFFFF"/>
+  <rect x="20" y="92" width="150" height="74" rx="11" fill="#EFEDE6" stroke="#E4E1D8"/>
+  <text x="95" y="120" text-anchor="middle" font-size="15" font-weight="600" fill="#181A2C">Words</text>
+  <text x="95" y="143" text-anchor="middle" font-size="12.5" fill="#8A8C9E" class="m">hackers · exploit</text>
+  <rect x="200" y="92" width="150" height="74" rx="11" fill="#E6E5F6" stroke="#CFCDEE"/>
+  <text x="275" y="120" text-anchor="middle" font-size="15" font-weight="600" fill="#2A2769">Embeddings</text>
+  <text x="275" y="143" text-anchor="middle" font-size="12.5" fill="#4B47B5" class="m">[0.9, 0.8, …]</text>
+  <rect x="380" y="92" width="150" height="74" rx="11" fill="#FFFFFF" stroke="#E4E1D8"/>
+  <rect x="386" y="86" width="150" height="74" rx="11" fill="#FFFFFF" stroke="#E4E1D8"/>
+  <rect x="392" y="80" width="150" height="74" rx="11" fill="#FFFFFF" stroke="#CFCDEE"/>
+  <text x="467" y="110" text-anchor="middle" font-size="15" font-weight="600" fill="#181A2C">Layers ×N</text>
+  <text x="467" y="132" text-anchor="middle" font-size="12.5" fill="#8A8C9E">attention + FFN</text>
+  <rect x="560" y="92" width="150" height="74" rx="11" fill="#DCF0E9" stroke="#B9E2D4"/>
+  <text x="635" y="120" text-anchor="middle" font-size="15" font-weight="600" fill="#0B5240">Prediction</text>
+  <text x="635" y="143" text-anchor="middle" font-size="12.5" fill="#138A6B" class="m">next-word odds</text>
+  <line x1="170" y1="129" x2="198" y2="129" stroke="#8A8C9E" stroke-width="1.6" marker-end="url(#ar1)"/>
+  <line x1="350" y1="129" x2="378" y2="129" stroke="#8A8C9E" stroke-width="1.6" marker-end="url(#ar1)"/>
+  <line x1="544" y1="117" x2="558" y2="117" stroke="#8A8C9E" stroke-width="1.6" marker-end="url(#ar1)"/>
+  <text x="365" y="40" text-anchor="middle" font-size="13" fill="#8A8C9E" class="m">… then repeat with the new word appended ↻</text>
+</svg>

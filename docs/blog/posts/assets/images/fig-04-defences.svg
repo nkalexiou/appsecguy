@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="720" height="480" role="img" aria-label="Pipeline showing where each defence lives: prompt hardening and RLHF inside the model are probabilistic, output classifier and tool-layer authorization outside are structural.">
+  <style>text{font-family:Inter,system-ui,-apple-system,sans-serif}</style>
+  <rect width="720" height="480" fill="#FFFFFF"/>
+  <defs>
+    <marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#8A8C9E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="55" y="34" width="330" height="64" rx="12" fill="#EFEDE6" stroke="#E4E1D8"/>
+  <text x="220" y="62" text-anchor="middle" font-size="15.5" font-weight="600" fill="#181A2C">Input sequence</text>
+  <text x="220" y="84" text-anchor="middle" font-size="12.5" fill="#8A8C9E">system + user, flattened together</text>
+  <rect x="55" y="150" width="330" height="64" rx="12" fill="#E6E5F6" stroke="#CFCDEE"/>
+  <text x="220" y="178" text-anchor="middle" font-size="15.5" font-weight="600" fill="#2A2769">Transformer forward pass</text>
+  <text x="220" y="200" text-anchor="middle" font-size="12.5" fill="#4B47B5">attention + RLHF-shaped weights</text>
+  <rect x="55" y="266" width="330" height="64" rx="12" fill="#F7E7CB" stroke="#E3C683"/>
+  <text x="220" y="294" text-anchor="middle" font-size="15.5" font-weight="600" fill="#6E440A">Logits → decoding</text>
+  <text x="220" y="316" text-anchor="middle" font-size="12.5" fill="#C77F1A">turns numbers into the actual reply</text>
+  <rect x="55" y="382" width="330" height="64" rx="12" fill="#DCF0E9" stroke="#B9E2D4"/>
+  <text x="220" y="410" text-anchor="middle" font-size="15.5" font-weight="600" fill="#0B5240">Tool / action layer</text>
+  <text x="220" y="432" text-anchor="middle" font-size="12.5" fill="#138A6B">where things actually happen</text>
+  <line x1="220" y1="98"  x2="220" y2="148" stroke="#8A8C9E" stroke-width="1.6" marker-end="url(#ar2)"/>
+  <line x1="220" y1="214" x2="220" y2="264" stroke="#8A8C9E" stroke-width="1.6" marker-end="url(#ar2)"/>
+  <line x1="220" y1="330" x2="220" y2="380" stroke="#8A8C9E" stroke-width="1.6" marker-end="url(#ar2)"/>
+  <line x1="385" y1="66"  x2="438" y2="66"  stroke="#C8C6BC" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="440" y="42" width="248" height="50" rx="9" fill="#FFF" stroke="#E3C683"/>
+  <text x="456" y="64" font-size="13.5" font-weight="600" fill="#6E440A">Prompt hardening</text>
+  <text x="456" y="82" font-size="12" fill="#8A8C9E">delimiters, reminders · probabilistic</text>
+  <line x1="385" y1="182" x2="438" y2="182" stroke="#C8C6BC" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="440" y="158" width="248" height="50" rx="9" fill="#FFF" stroke="#E3C683"/>
+  <text x="456" y="180" font-size="13.5" font-weight="600" fill="#6E440A">RLHF guardrails</text>
+  <text x="456" y="198" font-size="12" fill="#8A8C9E">baked into weights · probabilistic</text>
+  <line x1="385" y1="298" x2="438" y2="298" stroke="#C8C6BC" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="440" y="274" width="248" height="50" rx="9" fill="#FFF" stroke="#E3C683"/>
+  <text x="456" y="296" font-size="13.5" font-weight="600" fill="#6E440A">Output classifier</text>
+  <text x="456" y="314" font-size="12" fill="#8A8C9E">checks what came out · arms race</text>
+  <line x1="385" y1="414" x2="438" y2="414" stroke="#7FC9B0" stroke-width="1.4"/>
+  <rect x="440" y="390" width="248" height="50" rx="9" fill="#DCF0E9" stroke="#138A6B" stroke-width="1.6"/>
+  <text x="456" y="412" font-size="13.5" font-weight="700" fill="#0B5240">Authorization</text>
+  <text x="456" y="430" font-size="12" fill="#0B5240">checks the human's rights · structural</text>
+  <text x="55" y="468" font-size="12.5" fill="#8A8C9E"><tspan fill="#C77F1A" font-weight="600">Amber</tspan> = inside the model, can be out-voted.  <tspan fill="#0B5240" font-weight="600">Teal</tspan> = outside the model, can't be talked around.</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" width="720" height="250" role="img" aria-label="Self-attention fan: the word exploit attends strongly to hackers and moderately to systems.">
+  <style>text{font-family:Inter,system-ui,-apple-system,sans-serif}.m{font-family:'JetBrains Mono',ui-monospace,monospace}</style>
+  <rect width="720" height="250" fill="#FFFFFF"/>
+  <path d="M340 168 C 300 90, 230 90, 200 168" fill="none" stroke="#C77F1A" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+  <path d="M380 168 C 430 100, 500 100, 540 168" fill="none" stroke="#C77F1A" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+  <rect x="120" y="168" width="150" height="46" rx="10" fill="#EFEDE6" stroke="#E4E1D8"/>
+  <text x="195" y="196" text-anchor="middle" font-size="15" font-weight="500" fill="#181A2C">hackers</text>
+  <rect x="285" y="168" width="150" height="46" rx="10" fill="#F7E7CB" stroke="#E3C683"/>
+  <text x="360" y="196" text-anchor="middle" font-size="15" font-weight="700" fill="#6E440A">exploit</text>
+  <rect x="450" y="168" width="150" height="46" rx="10" fill="#EFEDE6" stroke="#E4E1D8"/>
+  <text x="525" y="196" text-anchor="middle" font-size="15" font-weight="500" fill="#181A2C">systems</text>
+  <text x="248" y="78" text-anchor="middle" font-size="13" font-weight="600" fill="#6E440A" class="m">strong link</text>
+  <text x="492" y="92" text-anchor="middle" font-size="13" font-weight="500" fill="#C77F1A" class="m">weaker link</text>
+  <text x="360" y="240" text-anchor="middle" font-size="13.5" fill="#8A8C9E">line thickness = how much "exploit" leans on that word</text>
+</svg>
